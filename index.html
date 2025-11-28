@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SPINE Engineering Ltd.</title>
+  <meta name="description"
+    content="Premium construction, mining, transmission line, rural electrification, solar and O&M services in Sierra Leone." />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="photos/img10.jpg" alt="SPINE Engineering logo"
+          style="width:170px;height:80px;display:block;object-fit:cover;">
+      </div>
+      <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="nav-menu">
+          <li><a href="#home" onclick="showPage('home')">Home</a></li>
+          <li><a href="#about" onclick="showPage('about')">About</a></li>
+          <li><a href="#services" onclick="showPage('services')">Services</a></li>
+          <li><a href="#vision" onclick="showPage('vision')">Vision</a></li>
+          <li><a href="#clients" onclick="showPage('clients')">Clients</a></li>
+          <li><a href="#team" onclick="showPage('team')">Team</a></li>
+          <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
+          <li><a href="#recruitment" onclick="showPage('recruitment')">Recruitment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home Page -->
+    <div id="home" class="page active">
+      <div class="hero">
+        <video class="herovideo" autoplay muted loop playsinline>
+          <source src="herovideo.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="container content">
+          <h1>Premium Construction, Mining & Electrical Works</h1>
+          <p>Delivering end-to-end solutions across civil construction, transmission lines, rural electrification,
+            solar, logistics and O&M — safely and efficiently.</p>
+
+          <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary" onclick="showPage('services')">Explore Services</a>
+            <a href="#contact" class="btn btn-secondary" onclick="showPage('contact')">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <h2>Why Choose Us</h2>
+          <div class="grid grid-3">
+            <div class="card">
+              <h3>Comprehensive Services</h3>
+              <p>From civil construction to mining, electrical works, and solar projects.</p>
+            </div>
+            <div class="card">
+              <h3>Experienced Team</h3>
+              <p>Expert professionals with decades of combined experience.</p>
+            </div>
+            <div class="card">
+              <h3>Quality Delivery</h3>
+              <p>On-time, on-budget project completion with high standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+      <div class="section">
+        <div class="container">
+          <h2>About the Company</h2>
+          <div class="grid grid-2">
+            <div>
+              <p>Spine Engineering Limited (formerly Sparrow Trading Ltd.) is a premium construction company engaged in
+                civil construction, mining and electrical works in Sierra Leone.</p>
+              <p>We provide rental and on-site services for compressed air equipment, dewatering, pumping, earth-moving,
+                concrete and masonry tools, generators, HVAC, lighting, material handling and job-site utility vehicles.
+              </p>
+              <p>With access to heavy machinery and an experienced full-time team, we deliver land leveling, grading and
+                filling for solar, industrial, transmission line, residential and agricultural projects.</p>
+            </div>
+            <div class="card">
+              <h3>Capabilities</h3>
+              <ul class="check">
+                <li>Construction, Mining, Rural Electrification</li>
+                <li>Transmission Lines & O&M engineering</li>
+                <li>Excavation, Haulage, Plant feeding</li>
+                <li>Land clearing & development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page">
+      <div class="section">
+        <div class="container">
+          <h2>Our Focus & Services</h2>
+          <div class="tabs">
+            <button class="tab active" onclick="showTab('civil')">Civil Construction</button>
+            <button class="tab" onclick="showTab('transmission')">Transmission Line</button>
+            <button class="tab" onclick="showTab('solar')">Solar Projects</button>
+            <button class="tab" onclick="showTab('mining')">Mining Services</button>
+            <button class="tab" onclick="showTab('om')">O&M</button>
+          </div>
+
+          <div id="civil" class="tab-content active">
+            <div class="grid grid-3">
+              <div class="card">
+                <img class="card-img" src="photos/img122.jpg" alt="Industrial Infrastructure" />
+                <h3>Industrial Infrastructure</h3>
+                <p>Design-build services, site preparation, utilities and commissioning.</p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="photos/img152.jpg" alt="Road & Highway Construction" />
+                <h3>Road & Highway Construction</h3>
+                <p>Earthworks, paving, drainage, signage and safety systems.</p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="photos/img172.jpg" alt="Commercial & Residential" />
+                <h3>Commercial & Residential</h3>
+                <p>Turnkey buildings, MEP integration, finishes and quality assurance.</p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="photos/img125.jpg" alt="Bridge & Tunnel" />
+                <h3>Bridge & Tunnel</h3>
+                <p>Structural works in RCC & prestressed concrete, piling and foundations.</p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="photos/img112.jpg" alt="Water & Sewage Systems" />
+                <h3>Water & Sewage Systems</h3>
+                <p>Network design, treatment plants and compliance management.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="transmission" class="tab-content">
+            <div class="grid grid-2">
+              <img class="card-img" src="photos/img158.jpg" alt="Transmission Line" style="height: 300px;" />
+              <div>
+                <ul class="check">
+                  <li>High-voltage design & installation</li>
+                  <li>Upgrades & modernization</li>
+                  <li>Feasibility studies & site assessments</li>
+                  <li>End-to-end project management</li>
+                  <li>Regulatory compliance & safety</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="solar" class="tab-content">
+            <div class="grid grid-2">
+              <img class="card-img" src="photos/img168.jpg" alt="Solar Projects" style="height: 300px;" />
+              <div>
+                <ul class="check">
+                  <li>PV system design & installation</li>
+                  <li>Sustainable solar energy systems</li>
+                  <li>Feasibility studies & energy audits</li>
+                  <li>Panel maintenance & cleaning</li>
+                  <li>Integration with existing power systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="mining" class="tab-content">
+            <div class="grid grid-2">
+              <img class="card-img" src="photos/img136.jpg" alt="Mining Services" style="height: 300px;" />
+              <div>
+                <h3>Mining Service Expertise</h3>
+                <ul class="check">
+                  <li>ROMPAD & Plant Feeding Management</li>
+                  <li>Export Haulage of Iron Ore</li>
+                  <li>Stockpile Management & Quality Control</li>
+                  <li>TSF Starter Wall Construction</li>
+                  <li>Open-pit support: excavation, ore hauling, site clearing</li>
+                  <li>Infrastructure: internal roads, drainage, water management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="om" class="tab-content">
+            <div class="grid grid-2">
+              <img class="card-img" src="photos/img163.jpg" alt="Operation & Maintenance" style="height: 300px;" />
+              <div>
+                <ul class="check">
+                  <li>Preventive & corrective maintenance</li>
+                  <li>24/7 emergency response</li>
+                  <li>Regular inspections & audits</li>
+                  <li>Advanced monitoring & control</li>
+                  <li>Performance optimization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vision Page -->
+    <div id="vision" class="page">
+      <div class="section">
+        <div class="container">
+          <div class="grid grid-2">
+            <div class="card">
+              <h2>Our Vision</h2>
+              <p>To be the leading brand in construction recognized for quality and innovation, supporting our staff and
+                the communities in which we work.</p>
+            </div>
+            <div class="card">
+              <h2>Mission</h2>
+              <p>We understand our clients' needs to deliver high-quality buildings on time and on budget. We are
+                recognized for being innovative and collaborative.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clients Page -->
+    <div id="clients" class="page">
+      <div class="section alt">
+        <div class="container">
+          <h2>Our Clients</h2>
+          <div class="grid grid-4">
+            <div class="card">Leone Rock Metal Group</div>
+            <div class="card">Ferro Fabrik Limited</div>
+            <div class="card">Sunbird Bioenergy Limited</div>
+            <div class="card">Planet Solar Energy Ltd</div>
+            <div class="card">China Railway Seventh Group</div>
+            <div class="card">Marampa Mines Limited</div>
+            <div class="card">Kalpataru Projects International</div>
+            <div class="card">RIC Energy (Spain)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Page -->
+    <div id="team" class="page">
+      <div class="section">
+        <div class="container">
+          <h2>Leadership & Organization</h2>
+          <div class="grid grid-3">
+            <div class="card">
+              <h3>CEO & Director</h3>
+              <p>Mayank Chhabra</p>
+            </div>
+            <div class="card">
+              <h3>CFO & Director</h3>
+              <p>Gurjeet Singh Dhanju</p>
+            </div>
+            <div class="card">
+              <h3>Project Director</h3>
+              <p>Navdeep Brar</p>
+            </div>
+            <div class="card">
+              <h3>VP – Mining & Logistics</h3>
+              <p>Aman Sharma</p>
+            </div>
+            <div class="card">
+              <h3>Quality Control Manager</h3>
+              <p>Mukul Singh</p>
+            </div>
+            <div class="card">
+              <h3>HSE Manager</h3>
+              <p>Kadija Sesay</p>
+            </div>
+            <div class="card">
+              <h3>Project Manager</h3>
+              <p>Mohammed Akib</p>
+            </div>
+            <div class="card">
+              <h3>HR & Accountant</h3>
+              <p>Sameer Khan</p>
+            </div>
+            <div class="card">
+              <h3>Senior Civil Engineer</h3>
+              <p>Arbaq Khan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+      <div class="section">
+        <div class="container">
+          <div class="grid grid-2">
+            <div class="contact-section">
+              <h2>Contact Us</h2>
+              <p><strong>SPINE Engineering Limited</strong></p>
+              <p>1 Back Street, Freetown, Sierra Leone</p>
+              <p>
+                Phone:
+                <a href="tel:+23299889988">+232-99889988</a> |
+                <a href="tel:+23280000099">+232-80000099</a>
+              </p>
+              <p>
+                Email:
+                <a href="mailto:info@spine-eng.sl">info@spine-eng.sl</a>
+              </p>
+              <a href="company-profile.pdf" download class="download-btn">
+                Download Company Profile (PDF)
+              </a>
+            </div>
+
+            <div class="card">
+              <h3>Request a Quote</h3>
+              <form id="contactForm">
+                <div>
+                  <label for="name">Name *</label>
+                  <input type="text" id="name" required>
+                </div>
+                <div>
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" required>
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone">
+                </div>
+                <div>
+                  <label for="service">Service *</label>
+                  <select id="service" required>
+                    <option value="">Select...</option>
+                    <option>Civil Construction</option>
+                    <option>Transmission Line</option>
+                    <option>Solar Projects</option>
+                    <option>Mining Services</option>
+                    <option>O&M</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="message">Project Details *</label>
+                  <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Request</button>
+                <div id="formMessage"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recruitment Page -->
+    <div id="recruitment" class="page">
+      <div class="section">
+        <div class="container">
+          <h2>Recruitment Corner</h2>
+          <p style="margin-bottom: 2rem;">Join our team of experts and build the future of Sierra Leone.</p>
+
+          <div class="grid grid-2">
+            <!-- Job Listings -->
+            <div>
+              <h3>Current Openings</h3>
+              <div class="grid grid-1" style="gap: 1rem;">
+                <div class="card">
+                  <h4>Civil Engineer</h4>
+                  <p><strong>Location:</strong> Freetown / Site</p>
+                  <p>Experienced Civil Engineer needed for infrastructure projects. Must have 5+ years experience.</p>
+                </div>
+                <div class="card">
+                  <h4>Site Supervisor</h4>
+                  <p><strong>Location:</strong> Various Sites</p>
+                  <p>Oversee daily operations at construction sites. Ensure safety and quality standards.</p>
+                </div>
+                <div class="card">
+                  <h4>Electrical Technician</h4>
+                  <p><strong>Location:</strong> Site</p>
+                  <p>Skilled technician for transmission line and solar installation projects.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Application Form -->
+            <div class="card">
+              <h3>Apply Now</h3>
+              <form id="recruitmentForm">
+                <div>
+                  <label for="appName">Full Name *</label>
+                  <input type="text" id="appName" required>
+                </div>
+                <div>
+                  <label for="appEmail">Email *</label>
+                  <input type="email" id="appEmail" required>
+                </div>
+                <div>
+                  <label for="appPhone">Phone *</label>
+                  <input type="tel" id="appPhone" required>
+                </div>
+                <div>
+                  <label for="appPosition">Position Applied For *</label>
+                  <select id="appPosition" required>
+                    <option value="">Select...</option>
+                    <option>Civil Engineer</option>
+                    <option>Site Supervisor</option>
+                    <option>Electrical Technician</option>
+                    <option>General Application</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="appLink">Link to Resume/CV *</label>
+                  <input type="url" id="appLink" placeholder="Google Drive / Dropbox link" required>
+                </div>
+                <div>
+                  <label for="appCover">Cover Letter</label>
+                  <textarea id="appCover" placeholder="Tell us why you are a good fit..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+                <div id="appFormMessage"></div>
+              </form>
+            </div>
+          </div>
+          <div class="section alt">
+            <div class="container">
+              <h2>Our Clients</h2>
+              <div class="grid grid-4">
+                <div class="card">Leone Rock Metal Group</div>
+                <div class="card">Ferro Fabrik Limited</div>
+                <div class="card">Sunbird Bioenergy Limited</div>
+                <div class="card">Planet Solar Energy Ltd</div>
+                <div class="card">China Railway Seventh Group</div>
+                <div class="card">Marampa Mines Limited</div>
+                <div class="card">Kalpataru Projects International</div>
+                <div class="card">RIC Energy (Spain)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Page -->
+        <div id="team" class="page">
+          <div class="section">
+            <div class="container">
+              <h2>Leadership & Organization</h2>
+              <div class="grid grid-3">
+                <div class="card">
+                  <h3>CEO & Director</h3>
+                  <p>Mayank Chhabra</p>
+                </div>
+                <div class="card">
+                  <h3>CFO & Director</h3>
+                  <p>Gurjeet Singh Dhanju</p>
+                </div>
+                <div class="card">
+                  <h3>Project Director</h3>
+                  <p>Navdeep Brar</p>
+                </div>
+                <div class="card">
+                  <h3>VP – Mining & Logistics</h3>
+                  <p>Aman Sharma</p>
+                </div>
+                <div class="card">
+                  <h3>Quality Control Manager</h3>
+                  <p>Mukul Singh</p>
+                </div>
+                <div class="card">
+                  <h3>HSE Manager</h3>
+                  <p>Kadija Sesay</p>
+                </div>
+                <div class="card">
+                  <h3>Project Manager</h3>
+                  <p>Mohammed Akib</p>
+                </div>
+                <div class="card">
+                  <h3>HR & Accountant</h3>
+                  <p>Sameer Khan</p>
+                </div>
+                <div class="card">
+                  <h3>Senior Civil Engineer</h3>
+                  <p>Arbaq Khan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+          <div class="section">
+            <div class="container">
+              <div class="grid grid-2">
+                <div class="contact-section">
+                  <h2>Contact Us</h2>
+                  <p><strong>SPINE Engineering Limited</strong></p>
+                  <p>1 Back Street, Freetown, Sierra Leone</p>
+                  <p>
+                    Phone:
+                    <a href="tel:+23299889988">+232-99889988</a> |
+                    <a href="tel:+23280000099">+232-80000099</a>
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:info@spine-eng.sl">info@spine-eng.sl</a>
+                  </p>
+                  <a href="company-profile.pdf" download class="download-btn">
+                    Download Company Profile (PDF)
+                  </a>
+                </div>
+
+                <div class="card">
+                  <h3>Request a Quote</h3>
+                  <form id="contactForm">
+                    <div>
+                      <label for="name">Name *</label>
+                      <input type="text" id="name" required>
+                    </div>
+                    <div>
+                      <label for="email">Email *</label>
+                      <input type="email" id="email" required>
+                    </div>
+                    <div>
+                      <label for="phone">Phone</label>
+                      <input type="tel" id="phone">
+                    </div>
+                    <div>
+                      <label for="service">Service *</label>
+                      <select id="service" required>
+                        <option value="">Select...</option>
+                        <option>Civil Construction</option>
+                        <option>Transmission Line</option>
+                        <option>Solar Projects</option>
+                        <option>Mining Services</option>
+                        <option>O&M</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="message">Project Details *</label>
+                      <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Request</button>
+                    <div id="formMessage"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recruitment Page -->
+        <div id="recruitment" class="page">
+          <div class="section">
+            <div class="container">
+              <h2>Recruitment Corner</h2>
+              <p style="margin-bottom: 2rem;">Join our team of experts and build the future of Sierra Leone.</p>
+
+              <div class="grid grid-2">
+                <!-- Job Listings -->
+                <div>
+                  <h3>Current Openings</h3>
+                  <div class="grid grid-1" style="gap: 1rem;">
+                    <div class="card">
+                      <h4>Civil Engineer</h4>
+                      <p><strong>Location:</strong> Freetown / Site</p>
+                      <p>Experienced Civil Engineer needed for infrastructure projects. Must have 5+ years experience.
+                      </p>
+                    </div>
+                    <div class="card">
+                      <h4>Site Supervisor</h4>
+                      <p><strong>Location:</strong> Various Sites</p>
+                      <p>Oversee daily operations at construction sites. Ensure safety and quality standards.</p>
+                    </div>
+                    <div class="card">
+                      <h4>Electrical Technician</h4>
+                      <p><strong>Location:</strong> Site</p>
+                      <p>Skilled technician for transmission line and solar installation projects.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Application Form -->
+                <div class="card">
+                  <h3>Apply Now</h3>
+                  <form id="recruitmentForm">
+                    <div>
+                      <label for="appName">Full Name *</label>
+                      <input type="text" id="appName" required>
+                    </div>
+                    <div>
+                      <label for="appEmail">Email *</label>
+                      <input type="email" id="appEmail" required>
+                    </div>
+                    <div>
+                      <label for="appPhone">Phone *</label>
+                      <input type="tel" id="appPhone" required>
+                    </div>
+                    <div>
+                      <label for="appPosition">Position Applied For *</label>
+                      <select id="appPosition" required>
+                        <option value="">Select...</option>
+                        <option>Civil Engineer</option>
+                        <option>Site Supervisor</option>
+                        <option>Electrical Technician</option>
+                        <option>General Application</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="appLink">Link to Resume/CV *</label>
+                      <input type="url" id="appLink" placeholder="Google Drive / Dropbox link" required>
+                    </div>
+                    <div>
+                      <label for="appCover">Cover Letter</label>
+                      <textarea id="appCover" placeholder="Tell us why you are a good fit..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                    <div id="appFormMessage"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> SPINE Engineering Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+
+</html>
